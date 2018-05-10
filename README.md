@@ -12,3 +12,6 @@
 * Login
 * Logout
 * Also View and edit your profile
+
+#### Global Sprint Partcipation
+https://www.mozilla.org/en-US/about/governance/policies/participation/

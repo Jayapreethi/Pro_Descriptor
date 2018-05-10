@@ -3,12 +3,12 @@
 
   db_connect();
 
-  $sql = "INSERT INTO posts (content, user_id) VALUES (?, ?)";
+  $sql = "DELETE FROM friend_requests WHERE user_id = ?";
   $statement = $conn->prepare($sql);
-  $statement->bind_param('si', $_POST['content'], $_SESSION['user_id']);
+  $statement->bind_param('i', $_GET['uid']);
 
   if ($statement->execute()) {
-    redirect_to("/home.php");
+    redirect_to("/profile.php?username=" . $_SESSION['user_username']);
   } else {
     echo "Error: " . $conn->error;
   }

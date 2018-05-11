@@ -64,11 +64,16 @@
         
   </div>
 
-       
+<?php
+  $error = $_GET['login_error'];
+  $register = $_GET['registered'];
+  if($error==true){
+    echo "<span style='color: red'>username or password is invaied</span>";
+  }
+?>
    <div class="form-group">
            
  <input class="btn btn-primary" type="submit" name="login" value="Login">
-         
  </div>
       
   </form>
@@ -105,8 +110,11 @@
         <input class="form-control" type="password" name="password" placeholder="Password">
  
  </div>
-
- 
+ <?php
+  if($register == true){
+    echo "<span style='color: red'>username or password is invaied</span>";
+  }
+ ?>
  <div class="form-group">
         
 <input class="btn btn-success" type="submit" name="register" value="Register">

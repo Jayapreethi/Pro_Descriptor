@@ -5,8 +5,8 @@
     global $conn; // db connection variable
     $db_server = "localhost";
     $username = "root";
-    $password = "";
-    $db_name = "faceclone";
+    $password = "1234";
+    $db_name = "mozsprint";
 
     // create a connection
     $conn = new mysqli($db_server, $username, $password, $db_name);

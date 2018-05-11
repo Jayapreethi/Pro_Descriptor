@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html>
@@ -20,7 +21,7 @@
      
  <div class="navbar-header">
        
- <a class="navbar-brand" href="index.html">Pro-Descriptor</a>
+ <a class="navbar-brand" href="index.php">Pro-Descriptor</a>
       
 </div>
  
@@ -48,7 +49,7 @@
   
   <!-- login form -->
   
-<form method="post" action="home.html">
+<form method="post" action="login.php">
   
 <div class="form-group">
            
@@ -83,7 +84,7 @@
        
  <!-- register form -->
      
-   <form method="post" action="home.html">
+   <form method="post" action="register.php">
           
 <div class="form-group">
            
